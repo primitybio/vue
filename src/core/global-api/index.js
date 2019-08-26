@@ -8,7 +8,7 @@ import { initAssetRegisters } from './assets'
 import { set, del } from '../observer/index'
 import { ASSET_TYPES } from 'shared/constants'
 import builtInComponents from '../components/index'
-import { observe } from 'core/observer/index'
+import { observe, toggleObserving } from 'core/observer/index'
 
 import {
   warn,
@@ -44,6 +44,8 @@ export function initGlobalAPI (Vue: GlobalAPI) {
   Vue.set = set
   Vue.delete = del
   Vue.nextTick = nextTick
+
+  Vue.toggleObserving = toggleObserving;
 
   // 2.6 explicit observable API
   Vue.observable = <T>(obj: T): T => {

@@ -18,6 +18,8 @@ declare interface GlobalAPI {
 
   observable: <T>(value: T) => T;
 
+  toggleObserving: (value: boolean) => void;
+
   // allow dynamic method registration
   [key: string]: any
 };
