@@ -1,3 +1,14 @@
+**Note:** this is a fork of Vue with a set of patches used by Primity. They're maintained on this branch,`primity-patches`. When a new Vue version is released, those patches are rebased onto the new Vue release.
+
+Versions of Vue are released like this
+
+* `@primitybio/vue@2.6.9-primity.1`
+* `@primitybio/vue@2.6.10-primity.1`
+
+If a new patch was added 2.6.10 would become
+
+* `@primitybio/vue@2.6.10-primity.2`
+
 <p align="center"><a href="https://vuejs.org" target="_blank" rel="noopener noreferrer"><img width="100" src="https://vuejs.org/images/logo.png" alt="Vue logo"></a></p>
 
 <p align="center">
